@@ -54,7 +54,7 @@
         "custom_liquid_H9DXEK": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ Cordless & Rechargeable</span> – Style your hair anywhere without needing an outlet.<br><br>\n\n<span style=\"font-weight: bold;\">🔥 Fast, Even Heating</span> –  Advanced ceramic technology smooths hair quickly with less frizz.<br><br>\n\n<span style=\"font-weight: bold;\">🌡️ Adjustable Heat Settings</span> – Suitable for fine, thick, curly, or treated hair.<br><br>\n\n<span style=\"font-weight: bold;\">💫 Smooth, Tangle-Free Results</span> –  Glides gently through hair for a sleek, shiny finish.\n\n</div>"
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ Perfect Symmetrical Wings in Seconds</span> – The stamp tip helps you create sharp, even eyeliner wings effortlessly without the usual struggle.<br><br>\n\n\n\n<span style=\"font-weight: bold;\">💧 Smudge-Resistant & Long Lasting</span> – Stays flawless for hours without fading, smudging, or transferring.<br><br>\n\n<span style=\"font-weight: bold;\">💖 Beginner-Friendly & Fast to Apply</span> – Ideal for daily use, whether you’re new to eyeliner or want a quicker routine.\n\n</div>"
           }
         },
         "variant_picker": {
@@ -96,14 +96,6 @@
           "settings": {
             "show_quantity_selector": false
           }
-        },
-        "collapsible_description_mFEEde": {
-          "type": "collapsible_description",
-          "settings": {
-            "icon": "heart",
-            "heading": "Description",
-            "keep_open": false
-          }
         }
       },
       "block_order": [
@@ -117,8 +109,7 @@
         "buy_buttons",
         "custom_liquid_wbDEGx",
         "related_buttons",
-        "sticky_cart",
-        "collapsible_description_mFEEde"
+        "sticky_cart"
       ],
       "custom_css": [
         ".product-form__submit {animation: shopifyshake 4s; animation-iteration-count: infinite;}"
@@ -142,6 +133,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "product_list_limit": 4,
         "show_divider": false,
@@ -165,11 +157,134 @@
         "padding_bottom": 36
       }
     },
-    "1771945068374140eb": {
-      "type": "apps",
+    "image_with_text_DzfFjg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9DxViA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Flawless Wings. Zero Effort.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_KJgqzb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Create perfectly sharp, waterproof wings in seconds. Just stamp, glide, and go — no smudging, no uneven lines, just confidence that lasts all day.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9DxViA",
+        "text_KJgqzb"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "include_margins": true,
+        "image": "shopify://shop_images/IMG_4355.webp",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
         "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_promotion_TxXJLQ": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement_FGWraM": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "free delivery all over lebanon",
+            "text_size": 20,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_FGWraM"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 1.6,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_icon": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#673c43",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_MHQ9Yi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DFCaf4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Easiest Eyeliner Ever",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_dGtJ6Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step out with a polished, defined eye look that stays flawless from morning to night — effortless, precise, and always on point.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DFCaf4",
+        "text_dGtJ6Q"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMG_4355.webp",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -235,7 +350,9 @@
     "empty-space",
     "main",
     "product-recommendations",
-    "1771945068374140eb",
+    "image_with_text_DzfFjg",
+    "scrolling_promotion_TxXJLQ",
+    "image_with_text_MHQ9Yi",
     "guarantees_Yj7NaV",
     "1771850465e38b72c3"
   ]
