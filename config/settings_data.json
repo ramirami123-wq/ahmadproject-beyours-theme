@@ -66,6 +66,7 @@
     "cart_recommendations_heading": "You may also like",
     "cart_recommendations_show_vendor": true,
     "predictive_search_show_vendor": true,
+    "favicon": "shopify://shop_images/Elegant_Aurora_logo_design_1_ae3a1eae-bec4-4b9f-abb6-ebcb885f9f45.png",
     "gift_card_logo_height": 70,
     "sections": {
       "main-password-header": {
