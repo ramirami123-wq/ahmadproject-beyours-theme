@@ -184,7 +184,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/IMG_4355.webp",
+        "image": "shopify://shop_images/IMG_4351.webp",
         "image_position": "center center",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -196,7 +196,7 @@
         "image_behavior": "none",
         "mobile_layout": "image_first",
         "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
+        "mobile_image_ratio": "adapt",
         "enable_video_looping": false,
         "video_url": "",
         "use_custom_colors": false,
@@ -292,6 +292,17 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_GPLKmn": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n  .aurora-faq {\n    max-width: 900px;\n    margin: 40px auto;\n    padding: 0 16px;\n    font-family: Arial, sans-serif;\n  }\n\n  .aurora-faq h2 {\n    text-align: center;\n    font-size: 32px;\n    margin-bottom: 24px;\n    color: #1a1a1a;\n  }\n\n  .aurora-faq details {\n    background: #f8f8f8;\n    border: 1px solid #ececec;\n    border-radius: 14px;\n    padding: 18px 20px;\n    margin-bottom: 14px;\n    transition: all 0.3s ease;\n  }\n\n  .aurora-faq details[open] {\n    background: #f4eef3;\n    border-color: #d8c2cf;\n  }\n\n  .aurora-faq summary {\n    list-style: none;\n    cursor: pointer;\n    font-size: 17px;\n    font-weight: 600;\n    color: #222;\n    position: relative;\n    padding-right: 28px;\n  }\n\n  .aurora-faq summary::-webkit-details-marker {\n    display: none;\n  }\n\n  .aurora-faq summary::after {\n    content: \"+\";\n    position: absolute;\n    right: 0;\n    top: 0;\n    font-size: 22px;\n    line-height: 1;\n    color: #7a314f;\n    transition: transform 0.25s ease;\n  }\n\n  .aurora-faq details[open] summary::after {\n    content: \"−\";\n  }\n\n  .aurora-faq .faq-answer {\n    margin-top: 12px;\n    font-size: 15px;\n    line-height: 1.7;\n    color: #555;\n  }\n</style>\n\n<section class=\"aurora-faq\">\n  <h2>Frequently Asked Questions</h2>\n\n  <details>\n    <summary>How does the winged eyeliner stamp work?</summary>\n    <div class=\"faq-answer\">\n      One side stamps the wing shape onto the outer corner of your eye, while the other side helps you define and complete your eyeliner look with ease.\n    </div>\n  </details>\n\n  <details>\n    <summary>Is it easy to use for beginners?</summary>\n    <div class=\"faq-answer\">\n      Yes, it’s designed to make eyeliner quick and simple, even if you usually struggle with getting both wings even.\n    </div>\n  </details>\n\n  <details>\n    <summary>Is the eyeliner long-lasting?</summary>\n    <div class=\"faq-answer\">\n      Yes, the formula is made to stay in place for hours with minimal smudging, so your look stays sharp throughout the day.\n    </div>\n  </details>\n\n  <details>\n    <summary>Can I use it on both eyes?</summary>\n    <div class=\"faq-answer\">\n      Yes, the product is made for creating matching wings on both eyes, helping you get a more symmetrical finish faster.\n    </div>\n  </details>\n</section>",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_iEVF9p": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -363,6 +374,7 @@
     "image_with_text_DzfFjg",
     "scrolling_promotion_TxXJLQ",
     "image_with_text_MHQ9Yi",
+    "custom_liquid_GPLKmn",
     "custom_liquid_iEVF9p",
     "guarantees_Yj7NaV"
   ]
