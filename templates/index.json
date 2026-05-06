@@ -254,50 +254,6 @@
         "padding_bottom": 36
       }
     },
-    "faq_VkHiGm": {
-      "type": "faq",
-      "blocks": {
-        "question_yNkDQY": {
-          "type": "question",
-          "settings": {
-            "title": "Is the Youngevity Sonic Dental Scaler safe to use at home?",
-            "text": "<p>Yes! The device is designed for safe at-home use. It features gentle yet powerful sonic vibrations and multiple modes to suit different sensitivity levels.</p>"
-          }
-        },
-        "question_YmRBPG": {
-          "type": "question",
-          "settings": {
-            "title": "Does it hurt to use?",
-            "text": "<p>When used correctly, it should not hurt. If you have sensitive gums, start with the lowest setting and gently guide the tip along your teeth.<br/></p>"
-          }
-        },
-        "question_9WMfD8": {
-          "type": "question",
-          "settings": {
-            "title": "Is it waterproof?",
-            "text": "<p>Yes, the Youngevity Sonic Dental Scaler is waterproof, making it safe for use in the bathroom and easy to clean after each use.<br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_yNkDQY",
-        "question_YmRBPG",
-        "question_9WMfD8"
-      ],
-      "disabled": true,
-      "name": "t:sections.faq.presets.name",
-      "settings": {
-        "narrow": false,
-        "secondary_background": false,
-        "show_divider": false,
-        "heading": "FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_blog_JgrQC6": {
       "type": "featured-blog",
       "blocks": {
@@ -338,6 +294,50 @@
         "show_image": true,
         "image_ratio": "landscape",
         "image_position": "center center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_VkHiGm": {
+      "type": "faq",
+      "blocks": {
+        "question_yNkDQY": {
+          "type": "question",
+          "settings": {
+            "title": "Is the Youngevity Sonic Dental Scaler safe to use at home?",
+            "text": "<p>Yes! The device is designed for safe at-home use. It features gentle yet powerful sonic vibrations and multiple modes to suit different sensitivity levels.</p>"
+          }
+        },
+        "question_YmRBPG": {
+          "type": "question",
+          "settings": {
+            "title": "Does it hurt to use?",
+            "text": "<p>When used correctly, it should not hurt. If you have sensitive gums, start with the lowest setting and gently guide the tip along your teeth.<br/></p>"
+          }
+        },
+        "question_9WMfD8": {
+          "type": "question",
+          "settings": {
+            "title": "Is it waterproof?",
+            "text": "<p>Yes, the Youngevity Sonic Dental Scaler is waterproof, making it safe for use in the bathroom and easy to clean after each use.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_yNkDQY",
+        "question_YmRBPG",
+        "question_9WMfD8"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "narrow": false,
+        "secondary_background": false,
+        "show_divider": false,
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -414,8 +414,8 @@
     "rich_text_iPTEGL",
     "scrolling_promotion_yJEgih",
     "custom_liquid_Tw6VFQ",
-    "faq_VkHiGm",
     "featured_blog_JgrQC6",
+    "faq_VkHiGm",
     "guarantees_QbnCCW"
   ]
 }
