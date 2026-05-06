@@ -65,6 +65,13 @@
             "size_chart": ""
           }
         },
+        "pumper_bundles_app_block_qb_x36WJd": {
+          "type": "shopify://apps/pumper-bundles/blocks/app-block-qb/0856870d-2aca-4b1e-a662-cf1797f61270",
+          "settings": {
+            "selected_product": "{{product}}",
+            "using_page_builder": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -88,7 +95,6 @@
         },
         "sticky_cart": {
           "type": "sticky_cart",
-          "disabled": true,
           "settings": {
             "show_quantity_selector": false
           }
@@ -101,6 +107,7 @@
         "price",
         "custom_liquid_H9DXEK",
         "variant_picker",
+        "pumper_bundles_app_block_qb_x36WJd",
         "buy_buttons",
         "custom_liquid_wbDEGx",
         "related_buttons",
