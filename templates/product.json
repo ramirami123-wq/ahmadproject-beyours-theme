@@ -314,17 +314,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_iEVF9p": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .reviews-section {\n    background: #fff5f8;\n    padding: 32px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n\n  .reviews-stars-row {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 12px;\n    flex-wrap: wrap;\n  }\n\n  .reviews-stars {\n    color: #b14b6f;\n    font-size: 20px;\n    letter-spacing: 1px;\n  }\n\n  .reviews-rating-text {\n    font-size: 14px;\n    color: #444;\n    font-weight: 600;\n  }\n\n  .reviews-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    line-height: 1.1;\n  }\n\n  .reviews-tabs {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    margin-bottom: 28px;\n  }\n\n  .reviews-tab {\n    padding: 10px 20px;\n    border-radius: 50px;\n    border: 2px solid #d8b2c1;\n    background: #fff;\n    font-size: 14px;\n    font-weight: 700;\n    cursor: pointer;\n    color: #5a3343;\n    transition: all 0.25s ease;\n  }\n\n  .reviews-tab.active {\n    background: #8f3558;\n    border-color: #8f3558;\n    color: #fff;\n  }\n\n  .reviews-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n    max-width: 1000px;\n    margin: 0 auto;\n  }\n\n  .review-card {\n    background: #ffffff;\n    border-radius: 18px;\n    padding: 22px 18px;\n    box-shadow: 0 8px 24px rgba(0,0,0,0.05);\n    text-align: center;\n  }\n\n  .review-card-stars {\n    color: #b14b6f;\n    font-size: 18px;\n    margin-bottom: 10px;\n    letter-spacing: 1px;\n  }\n\n  .review-card-text {\n    font-size: 14px;\n    line-height: 1.6;\n    color: #222;\n    margin: 0;\n  }\n\n  .review-card-author {\n    display: inline-block;\n    font-weight: 700;\n    margin-top: 10px;\n    color: #111;\n  }\n\n  @media (max-width: 799px) {\n    .reviews-grid {\n      grid-template-columns: 1fr 1fr;\n    }\n  }\n\n  @media (max-width: 599px) {\n    .reviews-title {\n      font-size: 23px;\n    }\n\n    .reviews-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .reviews-tab {\n      font-size: 13px;\n      padding: 9px 16px;\n    }\n  }\n</style>\n\n<div class=\"reviews-section\">\n\n  <div class=\"reviews-stars-row\">\n    <span class=\"reviews-stars\">★★★★★</span>\n    <span class=\"reviews-rating-text\">4.8 stars from happy customers</span>\n  </div>\n\n  <h2 class=\"reviews-title\">Sharp Wings. Real Confidence.</h2>\n\n  <div class=\"reviews-tabs\">\n    <button class=\"reviews-tab active\" onclick=\"switchTab('results', event)\">Results</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('easy', event)\">Easy to Use</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('symmetry', event)\">Symmetry</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('wear', event)\">Long Wear</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('routine', event)\">Daily Routine</button>\n  </div>\n\n  <div class=\"reviews-grid\" id=\"reviews-grid\"></div>\n\n</div>\n\n<script>\n  const allReviews = {\n    results: [\n      { text: \"My wings look so much sharper now. It changed my whole makeup routine.\", author: \"Lara M.\" },\n      { text: \"I usually mess up eyeliner, but this gave me a clean look in seconds.\", author: \"Nour K.\" },\n      { text: \"The before and after is crazy. My eyeliner finally looks polished.\", author: \"Maya R.\" }\n    ],\n    easy: [\n      { text: \"So easy to use, even for someone who struggles with eyeliner like me.\", author: \"Rima H.\" },\n      { text: \"Takes me less than a minute now. Super beginner-friendly.\", author: \"Sara A.\" },\n      { text: \"No stress, no starting over, no wasting time trying to match both sides.\", author: \"Dina F.\" }\n    ],\n    symmetry: [\n      { text: \"Both wings finally match. That alone makes this worth it for me.\", author: \"Hana S.\" },\n      { text: \"Helps me get a much more even eyeliner look without the usual effort.\", author: \"Tanya M.\" },\n      { text: \"I love how balanced and lifted my eyes look after using it.\", author: \"Celine A.\" }\n    ],\n    wear: [\n      { text: \"Stayed looking good for hours without ruining the shape.\", author: \"Nadine T.\" },\n      { text: \"I wore it all day and it still looked clean by the evening.\", author: \"Rana K.\" },\n      { text: \"Perfect for long days when I need my makeup to stay put.\", author: \"Joelle B.\" }\n    ],\n    routine: [\n      { text: \"This is part of my everyday makeup now. So much faster.\", author: \"Carla N.\" },\n      { text: \"Makes getting ready easier, especially when I’m in a rush.\", author: \"Yasmine F.\" },\n      { text: \"Definitely buying again. It saves me time every single day.\", author: \"Mirna L.\" }\n    ]\n  };\n\n  function renderReviews(tab) {\n    const reviews = allReviews[tab];\n    document.getElementById('reviews-grid').innerHTML = reviews.map(r => `\n      <div class=\"review-card\">\n        <div class=\"review-card-stars\">★★★★★</div>\n        <p class=\"review-card-text\">${r.text}</p>\n        <span class=\"review-card-author\">${r.author}</span>\n      </div>\n    `).join('');\n  }\n\n  function switchTab(tab, event) {\n    document.querySelectorAll('.reviews-tab').forEach(btn => btn.classList.remove('active'));\n    event.target.classList.add('active');\n    renderReviews(tab);\n  }\n\n  renderReviews('results');\n</script>",
-        "full_width": false,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "guarantees_Yj7NaV": {
       "type": "guarantees",
       "blocks": {
@@ -376,6 +365,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1778093448fc27006e": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_yUykfn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_yUykfn"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -387,7 +399,7 @@
     "image_with_text_MHQ9Yi",
     "custom_liquid_96xLW3",
     "custom_liquid_GPLKmn",
-    "custom_liquid_iEVF9p",
-    "guarantees_Yj7NaV"
+    "guarantees_Yj7NaV",
+    "1778093448fc27006e"
   ]
 }
